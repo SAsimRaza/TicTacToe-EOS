@@ -17,8 +17,16 @@
                     "type": "name"
                 },
                 {
-                    "name": "opponent",
+                    "name": "_to",
                     "type": "name"
+                },
+                {
+                    "name": "opponentStr",
+                    "type": "string"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
                 }
             ]
         },
@@ -33,6 +41,14 @@
                 {
                     "name": "opponent",
                     "type": "name"
+                },
+                {
+                    "name": "bet",
+                    "type": "int64"
+                },
+                {
+                    "name": "status",
+                    "type": "bool"
                 }
             ]
         }
