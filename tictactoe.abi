@@ -6,7 +6,16 @@
         {
             "name": "close",
             "base": "",
-            "fields": []
+            "fields": [
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "opponent",
+                    "type": "name"
+                }
+            ]
         },
         {
             "name": "create",
@@ -31,13 +40,37 @@
             ]
         },
         {
-            "name": "games",
+            "name": "creategame",
             "base": "",
             "fields": [
                 {
                     "name": "host",
                     "type": "name"
                 },
+                {
+                    "name": "opponent",
+                    "type": "name"
+                },
+                {
+                    "name": "bet_amount",
+                    "type": "int64"
+                }
+            ]
+        },
+        {
+            "name": "deleteall",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "games",
+            "base": "",
+            "fields": [
                 {
                     "name": "opponent",
                     "type": "name"
@@ -62,6 +95,16 @@
         {
             "name": "create",
             "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "creategame",
+            "type": "creategame",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleteall",
+            "type": "deleteall",
             "ricardian_contract": ""
         }
     ],

@@ -1,0 +1,75 @@
+<6>info  2022-11-04T11:19:09.201 nodeos    blockvault_client_plug:35     plugin_initialize    ] initializing blockvault_client plugin
+<6>info  2022-11-04T11:19:09.201 nodeos    chain_plugin.cpp:709          plugin_initialize    ] initializing chain plugin
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:540          operator()           ] Support for builtin protocol feature 'PREACTIVATE_FEATURE' (with digest of '0ec7e080177b2c02b278d5088611686b49d739925a92d9bfcacd7fc6b74053bd') is enabled without activation restrictions
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'ONLY_LINK_TO_EXISTING_PERMISSION' (with digest of '1a99a59d87e06e09ec5b028a9cbb7749b4a5ad8819004365d02dc4379a8b7241') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'FORWARD_SETCODE' (with digest of '2652f5f96006294109b3dd0bbde63693f55324af452b799ee137a81a905eed25') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'WTMSIG_BLOCK_SIGNATURES' (with digest of '299dcb6af692324b899b39f16d5a530a33062804e41f09dc97e9f156b4476707') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'REPLACE_DEFERRED' (with digest of 'ef43112c6543b88db2283a2e077278c315ae2c84719a8b25f25cc88565fbea99') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'NO_DUPLICATE_DEFERRED_ID' (with digest of '4a90c00d55454dc5b059055ca213579c6ea856967712a56017487886a4d4cc0f') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'RAM_RESTRICTIONS' (with digest of '4e7bf348da00a945489b2a681749eb56f5de00b900014e137ddae39f48f69d67') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'WEBAUTHN_KEY' (with digest of '4fca8bd82bbd181e714e283f83e1b45d95ca5af40fb89ad3977b653c448f78c2') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'BLOCKCHAIN_PARAMETERS' (with digest of '5443fcf88330c586bc0e5f3dee10e7f63c76c00249c87fe4fbf7f38c082006b4') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'DISALLOW_EMPTY_PRODUCER_SCHEDULE' (with digest of '68dcaa34c0517d19666e6b33add67351d8c5f69e999ca1e37931bc410a297428') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.210 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'KV_DATABASE' (with digest of '825ee6288fb1373eab1b5187ec2f04f6eacb39cb3a97f356a07c91622dd61d16') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'ONLY_BILL_FIRST_AUTHORIZER' (with digest of '8ba52fe7a3956c5cd3a656a3174b931d3bb2abb45578befc59f283ecd816a405') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'RESTRICT_ACTION_TO_SELF' (with digest of 'ad9e3d8f650687709fd68f4b90b41f7d825a365b02c23a636cef88ac2ac00c43') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'CONFIGURABLE_WASM_LIMITS' (with digest of 'bf61537fd21c61a60e542a5d66c3f6a78da0589336868307f94a82bccea84e88') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'ACTION_RETURN_VALUE' (with digest of 'c3a6138c5061cf291310887c0b5c71fcaffeab90d5deb50d3b9e687cead45071') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'FIX_LINKAUTH_RESTRICTION' (with digest of 'e0fb64b1085cc5538970158d05a009c24e276fb94e1a0bf6a528b48fbc4ff526') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:527          operator()           ] Support for builtin protocol feature 'GET_SENDER' (with digest of 'f0af56d2c5a48d60a4a5b5c903edfb7db3a736a94ed589d0b797df33ff9d3e1d') is enabled with preactivation required
+<6>info  2022-11-04T11:19:09.211 nodeos    chain_plugin.cpp:961          plugin_initialize    ] Deleting state database and blocks
+<6>info  2022-11-04T11:19:09.217 nodeos    chain_plugin.cpp:1156         plugin_initialize    ] Starting fresh blockchain state using default genesis state.
+<6>info  2022-11-04T11:19:09.664 nodeos    platform_timer_accurac:62     compute_and_print_ti ] Checktime timer accuracy: min:3us max:374us mean:7us stddev:7us
+<6>info  2022-11-04T11:19:09.675 nodeos    http_plugin.cpp:798           plugin_initialize    ] configured http to listen on 127.0.0.1:8888
+<6>info  2022-11-04T11:19:09.676 nodeos    producer_plugin.cpp:871       plugin_initialize    ] Subjective CPU billing disabled
+<6>info  2022-11-04T11:19:09.678 nodeos    resource_monitor_plugi:67     plugin_initialize    ] Monitoring interval set to 2
+<6>info  2022-11-04T11:19:09.678 nodeos    resource_monitor_plugi:73     plugin_initialize    ] Space usage threshold set to 90
+<6>info  2022-11-04T11:19:09.678 nodeos    resource_monitor_plugi:82     plugin_initialize    ] Shutdown flag when threshold exceeded set to true
+<6>info  2022-11-04T11:19:09.678 nodeos    resource_monitor_plugi:89     plugin_initialize    ] Warning interval set to 30
+<6>info  2022-11-04T11:19:09.678 nodeos    main.cpp:138                  main                 ] nodeos version v2.1.0 v2.1.0-26a4d285d0be1052d962149e431eb81500782991
+<6>info  2022-11-04T11:19:09.678 nodeos    main.cpp:139                  main                 ] nodeos using configuration file /home/asim/.local/share/eosio/nodeos/config/config.ini
+<6>info  2022-11-04T11:19:09.678 nodeos    main.cpp:140                  main                 ] nodeos data directory is /home/asim/.local/share/eosio/nodeos/data
+<4>warn  2022-11-04T11:19:09.679 nodeos    controller.cpp:539            startup              ] No existing chain state or fork database. Initializing fresh blockchain state and resetting fork database.
+<4>warn  2022-11-04T11:19:09.679 nodeos    controller.cpp:397            initialize_blockchai ] Initializing new blockchain with genesis state
+<6>info  2022-11-04T11:19:09.705 nodeos    combined_database.cpp:248     check_backing_store_ ] using chainbase for backing store
+<6>info  2022-11-04T11:19:09.705 nodeos    chain_plugin.cpp:1355         plugin_startup       ] starting chain in read/write mode
+<6>info  2022-11-04T11:19:09.705 nodeos    chain_plugin.cpp:1360         plugin_startup       ] Blockchain started; head block is #1, genesis timestamp is 2018-06-01T12:00:00.000
+<6>info  2022-11-04T11:19:09.705 nodeos    chain_api_plugin.cpp:98       plugin_startup       ] starting chain_api_plugin
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_info
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/abi_bin_to_json
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/abi_json_to_bin
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_abi
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_account
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_activated_protocol_features
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_block
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_block_header_state
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_block_info
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_code
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_code_hash
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_currency_balance
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_currency_stats
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_kv_table_rows
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_producer_schedule
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_producers
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_raw_abi
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_raw_code_and_abi
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_required_keys
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_scheduled_transactions
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_table_by_scope
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_table_rows
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/get_transaction_id
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/push_block
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/push_transaction
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/push_transactions
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/chain/send_transaction
+<6>info  2022-11-04T11:19:09.705 nodeos    history_api_plugin.cpp:34     plugin_startup       ] starting history_api_plugin
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/history/get_actions
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/history/get_controlled_accounts
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/history/get_key_accounts
+<6>info  2022-11-04T11:19:09.705 nodeos    http_plugin.cpp:983           add_handler          ] add api url: /v1/history/get_transaction
+<6>info  2022-11-04T11:19:09.705 nodeos    net_plugin.cpp:3782           plugin_startup       ] my node_id is ecb9abce233a5a902db400da40c7cc2ceb6a0ae5f076d80aef8680b6617f281b
+<3>error 2022-11-04T11:19:09.706 nodeos    net_plugin.cpp:3833           plugin_startup       ] net_plugin::plugin_startup failed to bind to port 9876
+<6>info  2022-11-04T11:19:09.706 nodeos    net_plugin.cpp:3882           plugin_shutdown      ] shutdown..
+<6>info  2022-11-04T11:19:09.706 nodeos    net_plugin.cpp:3899           plugin_shutdown      ] close 0 connections
+<6>info  2022-11-04T11:19:09.709 nodeos    net_plugin.cpp:3919           plugin_shutdown      ] exit shutdown
+<3>error 2022-11-04T11:19:09.728 nodeos    main.cpp:172                  main                 ] std::exception
