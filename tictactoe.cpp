@@ -38,7 +38,6 @@ public:
             _games_host.emplace(
                 get_self(), [&](auto &newGame)
                 {
-            // newGame.host = host;
             newGame.opponent = opponent;
             newGame.bet = bet_amount;
             newGame.status = false; });
@@ -59,10 +58,6 @@ public:
         // check(host != get_self(), "not allowed");
         if (host != get_self())
         {
-            print("Amount ", amount.amount);
-            print("Symbol ", amount.symbol);
-            // check(amount.symbol == betting_token_symbol, "IV");
-            // check(amount.amount > "0 ASA", "IA");
             check(opponent != host && _to == get_self(), "Authorized User call this");
             creategame(host, opponent, amount.amount);
         }
