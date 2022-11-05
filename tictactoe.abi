@@ -12,7 +12,7 @@
                     "type": "name"
                 },
                 {
-                    "name": "opponent",
+                    "name": "challenger",
                     "type": "name"
                 }
             ]
@@ -48,7 +48,7 @@
                     "type": "name"
                 },
                 {
-                    "name": "opponent",
+                    "name": "challenger",
                     "type": "name"
                 },
                 {
@@ -68,11 +68,23 @@
             ]
         },
         {
-            "name": "games",
+            "name": "game",
             "base": "",
             "fields": [
                 {
-                    "name": "opponent",
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "turn",
+                    "type": "name"
+                },
+                {
+                    "name": "winner",
                     "type": "name"
                 },
                 {
@@ -82,6 +94,54 @@
                 {
                     "name": "status",
                     "type": "bool"
+                },
+                {
+                    "name": "board",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "move",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "by",
+                    "type": "name"
+                },
+                {
+                    "name": "row",
+                    "type": "uint16"
+                },
+                {
+                    "name": "column",
+                    "type": "uint16"
+                }
+            ]
+        },
+        {
+            "name": "restart",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "by",
+                    "type": "name"
                 }
             ]
         }
@@ -106,12 +166,22 @@
             "name": "deleteall",
             "type": "deleteall",
             "ricardian_contract": ""
+        },
+        {
+            "name": "move",
+            "type": "move",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "restart",
+            "type": "restart",
+            "ricardian_contract": ""
         }
     ],
     "tables": [
         {
             "name": "games",
-            "type": "games",
+            "type": "game",
             "index_type": "i64",
             "key_names": [],
             "key_types": []
