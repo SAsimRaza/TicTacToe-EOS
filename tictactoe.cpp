@@ -52,17 +52,6 @@ public:
     // Define the games type which uses the game data structure.
     typedef eosio::multi_index<"games"_n, game> games;
 
-    // TABLE games
-    // {
-    //     // name host;
-    //     name opponent;
-    //     int64_t bet;
-    //     bool status;
-    //     auto primary_key() const { return opponent.value; };
-    // };
-
-    // typedef multi_index<name("games"), games> games_table;
-
     ACTION creategame(name host, name challenger, int64_t bet_amount)
     {
         games _games_host(get_self(), host.value);
