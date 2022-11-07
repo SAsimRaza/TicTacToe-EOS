@@ -163,6 +163,30 @@ public:
         g.winner = getWinner(g); });
     }
 
+    void claimWinningAmount(name caller, name challenger)
+    {
+        require_auth(caller);
+
+        games existingHostGames(get_self(), challenger.value);
+        auto itr = existingHostGames.find(challenger.value);
+        check(itr != existingHostGames.end(), "Game does not exist.");
+        check(bool(itr->host == caller) || bool(itr->challenger == caller), "Unauthorize");
+
+        name winner = itr->winner;
+        check(winner != none, "Winner not decided yet");
+        double payout_amount = itr->bet;
+        asset payout_asset(payout_amount, betting_token_symbol);
+
+        action{
+            permission_level{get_self(), "active"_n},
+            "eosio.token"_n,
+            "transfer"_n,
+            std::make_tuple(get_self(), winner, payout_asset, std::string("Sent!"))}
+            .send();
+
+        existingHostGames.erase(itr);
+    }
+
     ACTION deleteall(name scope)
     {
         require_auth(get_self());
@@ -233,6 +257,7 @@ private:
         {
             if (value == 1)
             {
+
                 return currentGame.host;
             }
             else if (value == 2)
