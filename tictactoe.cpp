@@ -36,8 +36,7 @@ void tictactoe::create(name host, name _to, std::string opponentStr, asset amoun
     print("Notify call from Create");
     auto opponent = name(opponentStr);
     // check(host != get_self(), "not allowed");
-    check()
-    if (host != get_self())
+    check() if (host != get_self())
     {
         check(opponent != host && _to == get_self(), "Authorized User call this");
         creategame(host, opponent, amount.amount);
@@ -119,7 +118,7 @@ void tictactoe::claimreward(name caller, name challenger)
 {
     require_auth(caller);
 
-    games existingHostGames(get_self(), challenger.value);
+    games existingHostGames(get_self(), caller.value);
     auto itr = existingHostGames.find(challenger.value);
     check(itr != existingHostGames.end(), "Game does not exist.");
     check(bool(itr->host == caller) || bool(itr->challenger == caller), "Unauthorize");
