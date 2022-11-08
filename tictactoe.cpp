@@ -66,6 +66,7 @@ public:
             _games_host.emplace(
                 get_self(), [&](auto &newGame)
                 {
+                    newGame.host = host;
             newGame.challenger = challenger;
             newGame.bet = bet_amount;
             newGame.status = false;
@@ -163,7 +164,7 @@ public:
         g.winner = getWinner(g); });
     }
 
-    void claimWinningAmount(name caller, name challenger)
+    void claimreward(name caller, name challenger)
     {
         require_auth(caller);
 
