@@ -31,11 +31,12 @@ void tictactoe::creategame(name host, name challenger, int64_t bet_amount)
 }
 
 // [[eosio::on_notify("eosio.token::transfer ")]]
-void tictactoe::create(name host, name _to, string opponentStr, asset amount)
+void tictactoe::create(name host, name _to, std::string opponentStr, asset amount)
 {
     print("Notify call from Create");
     auto opponent = name(opponentStr);
     // check(host != get_self(), "not allowed");
+    check()
     if (host != get_self())
     {
         check(opponent != host && _to == get_self(), "Authorized User call this");
@@ -60,7 +61,7 @@ void tictactoe::close(const name &host, const name &challenger)
         permission_level{get_self(), "active"_n},
         "eosio.token"_n,
         "transfer"_n,
-        std::make_tuple(get_self(), host, payout_asset, string("Sent")));
+        std::make_tuple(get_self(), host, payout_asset, std::string("Sent")));
     payout_action.send();
 
     _games.erase(game_itr);
